@@ -1,0 +1,9 @@
+# Replace the default silverstripe/auditor::AuditLogger syslog output with a physical log file
+---
+name: audit-logger
+after: auditor
+---
+SilverStripe\Core\Injector\Injector:
+  AuditLogger:
+    class: AuditLogger
+    factory: Springtimesoft\AuditLogger\AuditFactory

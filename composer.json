@@ -1,0 +1,28 @@
+{
+    "name": "springtimesoft/silverstripe-audit-logger",
+    "description": "A module to add security audit log file to Silverstripe",
+    "type": "silverstripe-vendormodule",
+    "homepage": "https://github.com/springtimesoft/silverstripe-audit-logger",
+    "keywords": [
+        "silverstripe",
+        "audit"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Springtimesoft",
+            "homepage": "https://springtimesoft.co.nz/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/springtimesoft/silverstripe-audit-logger/issues"
+    },
+    "require": {
+        "silverstripe/auditor": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Springtimesoft\\AuditLogger\\": "src/"
+        }
+    }
+}
