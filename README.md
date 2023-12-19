@@ -1,8 +1,11 @@
 # Silverstripe Audit Logger
 
-This module leverages much of the functionality of [silverstripe/auditor](https://github.com/silverstripe/silverstripe-auditor), however replaces the `silverstripe/auditor::AuditLogger` with `springtimesoft/silverstripe-audit-logger::AuditLogger` to write the log to `public/assets/audit.log` rather than the system log.
+This module leverages much of the functionality of [silverstripe/auditor](https://github.com/silverstripe/silverstripe-auditor),
+however replaces the `silverstripe/auditor::AuditLogger` with `springtimesoft/silverstripe-audit-logger::AuditLogger` to write
+the log to `public/assets/audit.log` rather than the system log.
 
-Once a day it will truncate the log automatically to only keep logs from the last 30 days. This can be set to `0` if no truncation is required. See [configuration](#configuration) below.
+Once a day it will truncate the log automatically to only keep logs from the last 30 days. This can be set to `0` if no
+truncation is required. See [configuration](#configuration) below.
 
 
 ## Installation
@@ -14,6 +17,7 @@ composer require springtimesoft/silverstripe-audit-logger
 
 ## Requirements
 
+- Silverstripe ^5
 - [silverstripe/auditor](https://github.com/silverstripe/silverstripe-auditor) (automatically imported)
 
 
