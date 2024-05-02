@@ -61,6 +61,11 @@ class AuditFactory implements Factory
         $logLevel    = $c->get(__CLASS__, 'logLevel');
         $keepForDays = $c->get(__CLASS__, 'keepForDays');
 
+        // Ensure log file path is relative to vendor directory (if not absolute)
+        if (strpos($logFile, '/') !== 0) {
+            $logFile = BASE_PATH . '/vendor/' . $logFile;
+        }
+
         switch ($service) {
             case 'AuditLogger':
                 $this->truncateLog($logFile, $keepForDays);
