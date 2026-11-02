@@ -18,7 +18,7 @@
         "issues": "https://github.com/springtimesoft/silverstripe-audit-logger/issues"
     },
     "require": {
-        "silverstripe/auditor": "^3.0"
+        "silverstripe/auditor": "^4.0"
     },
     "autoload": {
         "psr-4": {
