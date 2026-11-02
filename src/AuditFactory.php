@@ -50,7 +50,7 @@ class AuditFactory implements Factory
      *
      * @return mixed
      */
-    public function create($service, array $params = [])
+    public function create($service, array $params = []): ?object
     {
         if (!empty($params)) {
             throw new \Exception('AuditFactory does not support passing params.');

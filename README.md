@@ -17,7 +17,7 @@ composer require springtimesoft/silverstripe-audit-logger
 
 ## Requirements
 
-- Silverstripe ^5
+- Silverstripe ^6
 - [silverstripe/auditor](https://github.com/silverstripe/silverstripe-auditor) (automatically imported)
 
 
